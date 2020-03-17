@@ -1,0 +1,19 @@
+{
+  "name": "closure-webpack-plugin-template",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --open"
+  },
+  "devDependencies": {
+    "closure-webpack-plugin": "^2.3.0",
+    "google-closure-compiler": "^20200224.0.0",
+    "google-closure-deps-webpack-plugin": "^1.0.0",
+    "google-closure-library": "^20200224.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {}
+}
