@@ -1,4 +1,3 @@
-goog.require('Hello')
-// goog.require('Foo')
+import {ele} from './lib/hello.js';
 
-Hello.inject();
+document.body.append(ele);

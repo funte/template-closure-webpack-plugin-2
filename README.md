@@ -1,6 +1,7 @@
 # closure-webpack-plugin Template
-使用 `closure-webpack-plugin` 的模板项目.  
+使用 Google-Closure-Library, Webpack 的模板项目.  
 使用 `google-closure-deps-webpack-plugin` 生成 closure dependencies file.  
+使用 `google-closure-library-webpack-plugin` 支持 `goog.require, goog.provide, goog.module`.
 
 To run this app NPM cli:
 ```sh

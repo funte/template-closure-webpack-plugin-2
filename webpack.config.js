@@ -1,11 +1,10 @@
 const path = require('path');
 const HtmlPlugin = require("html-webpack-plugin");
-const ClosurePlugin = require('closure-webpack-plugin');
-const GCCDepsPlugin =  require('google-closure-deps-webpack-plugin');
-
+const GCLibraryPlugin = require('google-closure-library-webpack-plugin');
+const GCDepsPlugin = require('google-closure-deps-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   devtool: 'cheap-module-source-map',
   devServer: {
     contentBase: path.resolve(__dirname, 'build'),
@@ -29,7 +28,7 @@ module.exports = {
     }]
   },
   plugins: [
-    new GCCDepsPlugin({
+    new GCDepsPlugin({
       output: '.tmp/deps.js',
       source: {
         roots: ['src/lib'],
@@ -43,7 +42,7 @@ module.exports = {
       filename: 'index.html', // 默认值.
       title: 'webpack-tutorial'
     }),
-    new ClosurePlugin.LibraryPlugin({
+    new GCLibraryPlugin({
       closureLibraryBase: require.resolve(
         'google-closure-library/closure/goog/base'
       ),

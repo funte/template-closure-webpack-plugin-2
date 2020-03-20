@@ -5,7 +5,6 @@
     "start": "webpack-dev-server --open"
   },
   "devDependencies": {
-    "closure-webpack-plugin": "^2.3.0",
     "google-closure-compiler": "^20200224.0.0",
     "google-closure-deps-webpack-plugin": "^1.0.0",
     "google-closure-library": "^20200224.0.0",
